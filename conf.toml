@@ -2,6 +2,6 @@
 "DbPassword" = "changeme"
 "DbName" = "app"
 "DbPort" = "5432"
-"DbHost" = "934611408633.dkr.ecr.ap-southeast-1.amazonaws.com/servian"
+"DbHost" = "postgres.cr6bt9sg9xgn.ap-southeast-1.rds.amazonaws.com:5432"
 "ListenHost" = "localhost"
 "ListenPort" = "3000"
