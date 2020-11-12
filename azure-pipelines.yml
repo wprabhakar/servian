@@ -25,7 +25,7 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        arguments: -t student-api:latest
+        arguments: -t servian:latest
         tags: |
           $(tag)
     - task: ECRPushImage@1
@@ -33,8 +33,8 @@ stages:
         awsCredentials: 'ecr-push'
         regionName: 'ap-southeast-1'
         imageSource: 'imagename'
-        sourceImageName: 'student-api'
-        repositoryName: 'student-api'
+        sourceImageName: 'servian'
+        repositoryName: 'servian'
         autoCreateRepository: true
         outputVariable: 'student-api-image'
     - task: Bash@3
