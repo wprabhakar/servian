@@ -3,5 +3,5 @@
 "DbName" = "app"
 "DbPort" = "5432"
 "DbHost" = "postgres.cr6bt9sg9xgn.ap-southeast-1.rds.amazonaws.com"
-"ListenHost" = "localhost"
+"ListenHost" = ""
 "ListenPort" = "3000"
