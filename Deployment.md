@@ -68,4 +68,7 @@ Initial setup is not straight forward,  here are the highlevel steps
 Create Build pipeline ( uses azure-pipelines.yml - in the root of this project )
 Create Release pipeline ( by referring to the artifacts produced by build job )
 
+#### Screen Dump of setup
+Sample screen dump of the running environment can be found in
+=> InfrastructureAndAzureDevOpsScreenShots.pdf
 
