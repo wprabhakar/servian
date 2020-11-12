@@ -47,24 +47,24 @@ resource "aws_alb_listener" "ingress" {
   protocol          = "HTTP"
 
   default_action {
-    target_group_arn = aws_alb_target_group.nginx_task.id
-    type             = "forward"
-  }
-}
-
-
-resource "aws_alb_listener_rule" "api" {
-  listener_arn = aws_alb_listener.ingress.arn
-  priority     = 100
-
-  action {
-    type             = "forward"
     target_group_arn = aws_alb_target_group.api_task.id
-  }
-
-  condition {
-    path_pattern {
-      values = ["/api/*", "/healthcheck/"]
-    }
+    type             = "forward"
   }
 }
+
+
+// resource "aws_alb_listener_rule" "api" {
+//   listener_arn = aws_alb_listener.ingress.arn
+//   priority     = 100
+
+//   action {
+//     type             = "forward"
+//     target_group_arn = aws_alb_target_group.api_task.id
+//   }
+
+//   condition {
+//     path_pattern {
+//       values = ["/api/*", "/healthcheck/"]
+//     }
+//   }
+// }

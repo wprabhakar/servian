@@ -8,7 +8,7 @@ resource "aws_db_instance" "db" {
     engine                    = "postgres"
     engine_version            = "10.7"
     instance_class            = "db.t2.micro"
-    name                      = "test_db"
+    name                      = "app"
     username                  = "postgres"
     password                  = "changeme"
     port                      = "5432"

@@ -31,6 +31,13 @@
         "value": "${DB_PASSWORD}" 
        }
     ],
+    "entryPoint" : [
+      "sh",
+      "-c"
+    ],
+    "command": [
+      "/bin/sh -c \"./TechChallengeApp updatedb -s  && ./TechChallengeApp serve\""
+    ],
     "logConfiguration": {
       "logDriver": "awslogs",
       "options": {

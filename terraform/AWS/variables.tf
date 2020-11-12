@@ -9,7 +9,7 @@ variable "cloudwatch_group" {
 }
 
 variable "ecs_cluster" {
-  default = "servian-cluster"
+  default = "servian-dev"
 }
 
 // variable "app_family" {

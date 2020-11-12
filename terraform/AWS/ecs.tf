@@ -1,3 +1,3 @@
 resource "aws_ecs_cluster" "ecs_cluster" {
-    name  = "tasks-api"
+    name  = var.ecs_cluster
 }
